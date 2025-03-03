@@ -1,0 +1,37 @@
+<%= form_with(model: social_media_investigation) do |form| %>
+  <% if social_media_investigation.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(social_media_investigation.errors.count, "error") %> prohibited this social_media_investigation from being saved:</h2>
+
+      <ul>
+        <% social_media_investigation.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :platform, style: "display: block" %>
+    <%= form.number_field :platform %>
+  </div>
+
+  <div>
+    <%= form.label :platform_account_key, style: "display: block" %>
+    <%= form.text_field :platform_account_key %>
+  </div>
+
+  <div>
+    <%= form.label :started_at, style: "display: block" %>
+    <%= form.datetime_field :started_at %>
+  </div>
+
+  <div>
+    <%= form.label :ended_at, style: "display: block" %>
+    <%= form.datetime_field :ended_at %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

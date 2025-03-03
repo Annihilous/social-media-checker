@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Social media investigations" %>
+
+<h1>Social media investigations</h1>
+
+<div id="social_media_investigations">
+  <% @social_media_investigations.each do |social_media_investigation| %>
+    <%= render social_media_investigation %>
+    <p>
+      <%= link_to "Show this social media investigation", social_media_investigation %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New social media investigation", new_social_media_investigation_path %>

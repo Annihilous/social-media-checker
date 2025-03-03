@@ -1,0 +1,2 @@
+module SocialMediaInvestigationsHelper
+end

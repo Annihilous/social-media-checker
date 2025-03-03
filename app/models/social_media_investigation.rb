@@ -1,0 +1,2 @@
+class SocialMediaInvestigation < ApplicationRecord
+end

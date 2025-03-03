@@ -1,0 +1,1 @@
+json.partial! "social_media_investigations/social_media_investigation", social_media_investigation: @social_media_investigation

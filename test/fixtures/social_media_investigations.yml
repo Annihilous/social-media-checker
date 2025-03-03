@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  platform: 1
+  platform_account_key: MyString
+  started_at: 2025-03-03 15:34:14
+  ended_at: 2025-03-03 15:34:14
+  api_payload: 
+
+two:
+  platform: 1
+  platform_account_key: MyString
+  started_at: 2025-03-03 15:34:14
+  ended_at: 2025-03-03 15:34:14
+  api_payload: 
